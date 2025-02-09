@@ -1,6 +1,6 @@
 # Contracts
 
-A library that provides Design by Contract like APIs to ensure functions adhere to specific preconditions and postconditions.
+A library that provides Design by Contract like API to ensure functions adhere to specific preconditions and postconditions.
 
 #### Dependencies: [LibStub](https://www.curseforge.com/wow/addons/libstub)
 
