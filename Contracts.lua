@@ -8,6 +8,7 @@ if not lib then return end
 local error, assert = error, assert
 local select = select
 local unpack = unpack
+local concat = table.concat
 local sjoin = string.join
 local smatch = string.match
 local type = type
@@ -26,6 +27,8 @@ function lib:Ensures(condition, message, ...)
         for i = 1, select("#", ...) do
             if args[i] == nil then
                 args[i] = "???"
+            elseif type(args[i]) == "table" then
+                args[i] = concat(args[i], ", ")
             end
         end
         error(message:format(unpack(args)), 3)
