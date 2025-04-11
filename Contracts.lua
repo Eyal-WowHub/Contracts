@@ -6,6 +6,7 @@ local lib = LibStub:NewLibrary("Contracts-1.0", 0)
 if not lib then return end
 
 local error, assert = error, assert
+local debugstack = debugstack
 local select = select
 local unpack = unpack
 local concat = table.concat
